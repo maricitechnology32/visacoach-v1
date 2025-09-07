@@ -11,7 +11,7 @@ const { createCounselor, getConsultancyUsers, getPlatformStats, } = require('../
 router.post('/create-counselor', protect, authorize('super-admin'), createCounselor);
 router.get('/consultancies/:consultancyId/users', protect, authorize('super-admin'), getConsultancyUsers);
 router.get('/stats', protect, authorize('super-admin'), getPlatformStats);
-const { getPlatformApplicationStats } = require('../controllers/adminController');  
+const { getPlatformApplicationStats } = require('../controllers/adminController');
 
 // Add this new route for Super Admin stats
 router.get('/application-stats', protect, authorize('super-admin'), getPlatformApplicationStats);
