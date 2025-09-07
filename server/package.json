@@ -14,6 +14,7 @@
   "type": "commonjs",
   "dependencies": {
     "@sendgrid/mail": "^8.1.5",
+    "@upstash/redis": "^1.35.3",
     "axios": "^1.11.0",
     "bcryptjs": "^3.0.2",
     "bullmq": "^5.58.0",
